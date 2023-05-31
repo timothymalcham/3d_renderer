@@ -8,7 +8,7 @@ OBJECTS = src/*.c
 all: 3d_renderer
 
 3d_renderer: $(OBJECTS)
-	$(CC) $(OBJECTS) -o 3d_renderer
+	$(CC) $(CFLAGS) $(OBJECTS) -o 3d_renderer
 
 clean:
 	rm -f *.o 3d_renderer

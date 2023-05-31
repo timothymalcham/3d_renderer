@@ -1,3 +1,6 @@
+# used this SO page to help me with the Makefile
+# https://stackoverflow.com/questions/26409648/how-to-compile-a-c-program-with-make-on-mac-os-x-terminal
+
 CC = cc
 CFLAGS = -std=c99 -pedantic -Wall
 OBJECTS = src/*.c

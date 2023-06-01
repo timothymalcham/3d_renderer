@@ -54,7 +54,9 @@ uint32_t* color_buffer = NULL;
 color_buffer = (uint32_t*) malloc(sizeof(uint32_t) * window_width * window_height);
 
 // set pixel at "row" 10, "column" 20 to the color red
-// not a grid per se, instead memory allocation is just one long row/array. Imagine a rect grid smushed into one long row...
+// y = window_width * "the row" 
+// x = the row + "column"
+// not a grid per se, instead memory allocation is just one long row/array. Imagine a rect grid smushed into one long sequence...
 color_buffer[(window_width * 10) + 20] = 0xFFFF0000
 ```
 

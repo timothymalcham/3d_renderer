@@ -2,7 +2,7 @@
 # https://stackoverflow.com/questions/26409648/how-to-compile-a-c-program-with-make-on-mac-os-x-terminal
 
 CC = cc
-CFLAGS = -std=c99 -pedantic -Wall
+CFLAGS = -std=c99 -pedantic -Wall -lSDL2
 OBJECTS = src/*.c
 
 all: 3d_renderer

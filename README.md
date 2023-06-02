@@ -50,7 +50,8 @@ uint32_t* color_buffer = NULL;
 
 // allocate how many bytes? 
 // gets the number of pixels on screen, gets the size of uint32_t, times the # of pixels, the allocation needed, cast to a uint32_t pointer
-// malloc = memory allocation
+// malloc = memory allocation, use to dynamically allocate a certain number of bytes in the heap
+// there is a possibility that malloc fails to allocate that number of bytes in memory (maybe the machine does not have enough free memory). If that happens, malloc will return a NULL pointer.
 color_buffer = (uint32_t*) malloc(sizeof(uint32_t) * window_width * window_height);
 
 // set pixel at "row" 10, "column" 20 to the color red

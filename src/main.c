@@ -49,6 +49,11 @@ bool initialize_window(void) {
 void setup(void) {
     // allocate x amount of memory for the color buffer
     color_buffer = (uint32_t*) malloc(sizeof(uint32_t) * WINDOW_WIDTH * WINDOW_HEIGHT);
+    // check if malloc was successful
+    if (!color_buffer) {
+        fprintf(stderr, "Error allocating memory for color buffer. \n");
+        is_running = false;
+    }
 }
 
 void process_input(void) {

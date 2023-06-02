@@ -54,6 +54,9 @@ uint32_t* color_buffer = NULL;
 // there is a possibility that malloc fails to allocate that number of bytes in memory (maybe the machine does not have enough free memory). If that happens, malloc will return a NULL pointer.
 color_buffer = (uint32_t*) malloc(sizeof(uint32_t) * window_width * window_height);
 
+// calloc() is a good option for allocating and also seting the allocated memory to zero.
+// Good for dynamic arrays
+
 // set pixel at "row" 10, "column" 20 to the color red
 // y = window_width * "the row" 
 // x = the row + "column"

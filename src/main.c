@@ -102,6 +102,20 @@ void draw_dot_grid(void) {
     }
 }
 
+void draw_rect(int posX, int posY, int width, int height, uint32_t color) {
+    if ((posX > window_width || posX + width > window_width) || (posY > window_height || posY + height > window_height)) {
+        fprintf(stderr, "Rect would be drawn outside of the bounds of the screen\n");
+    }
+
+    for (int y = 0; y < window_height; y++) {
+        for (int x = 0; x < window_width; x++) {
+            if ((x >= posX && x <= posX + width) && (y >= posY && y <= posY + height)) {
+                color_buffer[(window_width * y) + x] = color;     
+            }
+        }
+    }
+}
+
 void update(void) {
     
 }
@@ -130,6 +144,7 @@ void render(void) {
     SDL_RenderClear(renderer);
 
     draw_dot_grid();
+    draw_rect(100, 200, 400, 200, 0xFF0000FF);
 
     render_color_buffer();
     clear_color_buffer(0xFF000000);

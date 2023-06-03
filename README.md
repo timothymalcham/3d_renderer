@@ -12,7 +12,11 @@ make
 
 ## Notes
 
-Hexidecimal representation of a color (Red, RGBA):
+Learnin's and stuff
+
+#### Hexadecimal colors
+
+Hexadecimal representation of a color (Red, RGBA):
 
 ```c
 0xFFFF0000
@@ -23,7 +27,7 @@ Hexidecimal representation of a color (Red, RGBA):
 '00' -> Green (G)
 ```
 
-__Fixed-sized types__
+#### Fixed-sized types
 
 ```c
 sizeof(int) = ??? // depends on the specifics of the compiler, architecture of the machine.
@@ -37,11 +41,11 @@ uint16_t
 uint32_t
 ```
 
-C standard way of declaring types:
+`uint8_t` -> C standard way of declaring fixed-sized int type:
 - unsigned
 - 8 bits (fixed size)
 
-__Color Buffer__ 
+#### Color Buffer 
 
 Array of colors (32 bits)
 
@@ -66,4 +70,18 @@ color_buffer[(window_width * 10) + 20] = 0xFFFF0000
 
 Points to the first element (in array) at that memory address. 
 
-How many elements to allocate for the color buffer? Depends on the w x h of the window.
+How many elements to allocate for the color buffer? Depends on the width x height of the window.
+
+#### Vectors
+
+__Qualities of vectors:__
+Magnitude (how intense/strong is push/pull)
+Direction (where is it pointing)
+
+__Scalar vs Vector (quantities)__
+
+- Scalar (single number, e.g. a single number/scalar can tell us temperture, area, length, pressure, etc.)
+- Vector (something described with multiple values (e.g. intensity/direction), e.g. velocity, acceleration, force, lift, drag, displacement, etc.)
+
+In graphics programming, 2D/3D points are thought of as Vectors: (0, 0), (0, 0, 0).
+

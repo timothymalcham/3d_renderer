@@ -59,15 +59,21 @@ void draw_dot_grid(void) {
     }
 }
 
-void draw_rect(int posX, int posY, int width, int height, uint32_t color) {
-    if ((posX > window_width || posX + width > window_width) || (posY > window_height || posY + height > window_height)) {
+void draw_pixel(int x, int y, uint32_t color) {
+    if (x < window_width && y < window_height) {
+        color_buffer[(window_width * y) + x] = color;
+    }
+}
+
+void draw_rect(int x, int y, int width, int height, uint32_t color) {
+    if ((x > window_width || x + width > window_width) || (y > window_height || y + height > window_height)) {
         fprintf(stderr, "Rect would be drawn outside of the bounds of the screen\n");
     }
 
-    for (int y = 0; y < window_height; y++) {
-        for (int x = 0; x < window_width; x++) {
-            if ((x >= posX && x <= posX + width) && (y >= posY && y <= posY + height)) {
-                color_buffer[(window_width * y) + x] = color;     
+    for (int _y = 0; _y < window_height; _y++) {
+        for (int _x = 0; _x < window_width; _x++) {
+            if ((_x >= x && _x <= x + width) && (_y >= y && _y <= y + height)) {
+                color_buffer[(window_width * _y) + _x] = color;     
             }
         }
     }

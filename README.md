@@ -88,3 +88,5 @@ In graphics programming, 2D/3D points are thought of as Vectors: (0, 0), (0, 0, 
 <img width="543" alt="image" src="https://github.com/timothymalcham/3d_renderer/assets/2825063/40bda1e6-d5d0-4acd-b117-0e254e05383a">
 
 "Direction" is where the arrow points from the origin, "Magnitude" is how far that arrow goes (destination, the actual point itself).
+
+A 3D is a set of 3D Vectors. A component with 2 components: (3.0, 6.0) x/y components, possibly a z component if 3D.

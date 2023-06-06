@@ -1,7 +1,9 @@
 #include <stdio.h>
 #include <stdint.h> 
 #include <stdbool.h>
+
 #include "display.h"
+#include "vector.h"
 
 bool is_running = false;
 

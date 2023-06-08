@@ -103,3 +103,6 @@ int numbers[7]; // allows for 7 integer
 ```
 
 ### Projecting Points
+
+<img width="807" alt="image" src="https://github.com/timothymalcham/3d_renderer/assets/2825063/37f65b8e-9d2f-484b-b605-4dc36de47b49">
+

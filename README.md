@@ -45,7 +45,7 @@ uint32_t
 - unsigned
 - 8 bits (fixed size)
 
-#### Color Buffer 
+### Color Buffer 
 
 Array of colors (32 bits)
 
@@ -72,7 +72,7 @@ Points to the first element (in array) at that memory address.
 
 How many elements to allocate for the color buffer? Depends on the width x height of the window.
 
-#### Vectors
+### Vectors
 
 __Qualities of vectors:__
 Magnitude (how intense/strong is push/pull)
@@ -92,7 +92,14 @@ In graphics programming, 2D/3D points are thought of as Vectors: (0, 0), (0, 0, 
 A 3D is a set of 3D Vectors. A component with 2 components: (3.0, 6.0) x/y components, possibly a z component if 3D.
 
 
-#### Array of Points
+### Array of Points
 
 <img width="385" alt="image" src="https://github.com/timothymalcham/3d_renderer/assets/2825063/942f1e1f-98f0-4f88-a963-b38c18aad122">
 
+In C, you have to define an array with a specific size:
+
+```c
+int numbers[7]; // allows for 7 integer
+```
+
+### Projecting Points

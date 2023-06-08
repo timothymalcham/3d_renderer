@@ -9,6 +9,9 @@
 // Constant array size declaration
 const int N_POINTS = 9 * 9 * 9;
 vector3_t cube_points[N_POINTS]; // 9x9x9 3D cube
+vector2_t projected_points[N_POINTS];
+
+float fov_factor = 128;
 
 bool is_running = false;
 
@@ -63,16 +66,40 @@ void process_input(void) {
     }
 }
 
+// function that recieves a 3D vector and returns a 2D point
+// scale up by fov_factor
+vector2_t project_orthographic_point(vector3_t point) {
+    vector2_t projected_point = {
+        .x = (fov_factor * point.x),
+        .y = (fov_factor * point.y)
+    };
+    return projected_point;
+}
+
 void update(void) {
-    
+    for (int i = 0; i < N_POINTS; i++) {
+        vector3_t point = cube_points[i];
+        // project the current point in the cube
+        vector2_t projected_point = project_orthographic_point(point);
+        projected_points[i] = projected_point;
+    }
 }
 
 void render(void) {
-    SDL_SetRenderDrawColor(renderer, 0, 0, 0, 255);
-    SDL_RenderClear(renderer);
-
     draw_dot_grid();
-    draw_rect(100, 200, 400, 200, 0xFF0000FF);
+
+    // loop all projected points and render them
+    // translate each point by 1/2 screen width/height
+    for (int i = 0; i < N_POINTS; i++) {
+        vector2_t projected_point = projected_points[i];
+        draw_rect(
+            projected_point.x + (window_width / 2),
+            projected_point.y + (window_height / 2),
+            4,
+            4,
+            0xFFFFFF00
+        );
+    }
 
     render_color_buffer();
     clear_color_buffer(0xFF000000);

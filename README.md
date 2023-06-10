@@ -133,3 +133,11 @@ Consider the dead center of the screen the origin point `(0, 0, 0)`.
 
 <img width="400" alt="image" src="https://github.com/timothymalcham/3d_renderer/assets/2825063/51a7081b-e8a4-4428-b393-74e06f27872f">
 
+A point further "back" in space must be translated to fit on the visible screen in this case.
+
+These two triangles are *similiar* triangles:
+
+<img width="500" alt="image" src="https://github.com/timothymalcham/3d_renderer/assets/2825063/dd770638-54e3-4b3e-b9d3-2773a494be5f">
+
+
+

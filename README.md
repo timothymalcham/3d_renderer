@@ -116,7 +116,10 @@ A form of parallel projection in which all the projection lines are orthogonal t
 
 Another way to represent 3D objects in a 2D way. All the angles between the x-axis, y-axis, and z-axis equal 120 degrees.
 
+<img width="854" alt="image" src="https://github.com/timothymalcham/3d_renderer/assets/2825063/726e6fd7-2b6e-4e26-9963-fd80e5cddec5">
+
 
 #### Perspective Projection
 
 Starting from an origin point, there is field of view, creating a sort of pyramid/cone shape.
+

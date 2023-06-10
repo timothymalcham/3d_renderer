@@ -12,8 +12,6 @@ make
 
 ## Notes
 
-Learnin's and stuff
-
 #### Hexadecimal colors
 
 Hexadecimal representation of a color (Red, RGBA):
@@ -102,18 +100,23 @@ In C, you have to define an array with a specific size:
 int numbers[7]; // allows for 7 integer
 ```
 
+"Points" and "Vectors" can be used interchangeably. They both refer to the same thing.
+
 ### Projecting Points
 
 <img width="807" alt="image" src="https://github.com/timothymalcham/3d_renderer/assets/2825063/37f65b8e-9d2f-484b-b605-4dc36de47b49">
 
 #### Orthographic projection
 
-An Orthographic projection is a 2D representation of a 3D object. The 6 principal views (top, rear, right side, bottom, front, left side) are created by looking at the object (straight on) in the directions indicated. You will always view the 3d object in such a way that you are looking straight on to one of these six views. 
+"Parallel projection", i.e. parallel to the projection plane. An Orthographic projection is a 2D representation of a 3D object. The 6 principal views (top, rear, right side, bottom, front, left side) are created by looking at the object (straight on) in the directions indicated. You will always view the 3d object in such a way that you are looking straight on to one of these six views. 
 
 A form of parallel projection in which all the projection lines are orthogonal to the projection plane.
-
-"Points" and "Vectors" can be used interchangeably. They both refer to the same thing.
 
 #### Isometric Projection
 
 Another way to represent 3D objects in a 2D way. All the angles between the x-axis, y-axis, and z-axis equal 120 degrees.
+
+
+#### Perspective Projection
+
+Starting from an origin point, there is field of view, creating a sort of pyramid/cone shape.

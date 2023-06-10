@@ -121,5 +121,7 @@ Another way to represent 3D objects in a 2D way. All the angles between the x-ax
 
 #### Perspective Projection
 
+<img width="620" alt="image" src="https://github.com/timothymalcham/3d_renderer/assets/2825063/574006fc-1fc7-4746-aa10-5612765cb808">
+
 Starting from an origin point, there is field of view, creating a sort of pyramid/cone shape.
 

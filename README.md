@@ -129,4 +129,5 @@ As the Z value recedes further back into space (the greater the z value), the mo
 
 <img width="400" alt="image" src="https://github.com/timothymalcham/3d_renderer/assets/2825063/9067fd4f-c2d9-4eb4-8509-01a18cc18c58">
 
+<img width="400" alt="image" src="https://github.com/timothymalcham/3d_renderer/assets/2825063/51a7081b-e8a4-4428-b393-74e06f27872f">
 

@@ -104,7 +104,7 @@ int numbers[7]; // allows for 7 integer
 
 ### Projecting Points
 
-<img width="807" alt="image" src="https://github.com/timothymalcham/3d_renderer/assets/2825063/37f65b8e-9d2f-484b-b605-4dc36de47b49">
+<img width="400" alt="image" src="https://github.com/timothymalcham/3d_renderer/assets/2825063/37f65b8e-9d2f-484b-b605-4dc36de47b49">
 
 #### Orthographic projection
 
@@ -116,12 +116,17 @@ A form of parallel projection in which all the projection lines are orthogonal t
 
 Another way to represent 3D objects in a 2D way. All the angles between the x-axis, y-axis, and z-axis equal 120 degrees.
 
-<img width="854" alt="image" src="https://github.com/timothymalcham/3d_renderer/assets/2825063/726e6fd7-2b6e-4e26-9963-fd80e5cddec5">
+<img width="400" alt="image" src="https://github.com/timothymalcham/3d_renderer/assets/2825063/726e6fd7-2b6e-4e26-9963-fd80e5cddec5">
 
 
 #### Perspective Projection
 
-<img width="620" alt="image" src="https://github.com/timothymalcham/3d_renderer/assets/2825063/574006fc-1fc7-4746-aa10-5612765cb808">
+<img width="400" alt="image" src="https://github.com/timothymalcham/3d_renderer/assets/2825063/574006fc-1fc7-4746-aa10-5612765cb808">
 
 Starting from an origin point, there is field of view, creating a sort of pyramid/cone shape.
+
+As the Z value recedes further back into space (the greater the z value), the more closer together the x/y points should be rendered next to each other, giving the illusion of depth:
+
+<img width="400" alt="image" src="https://github.com/timothymalcham/3d_renderer/assets/2825063/9067fd4f-c2d9-4eb4-8509-01a18cc18c58">
+
 
